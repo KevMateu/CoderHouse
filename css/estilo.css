@@ -1,130 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-
-
-/* ESTILOS GENERALES */
-
-html{
-    font-size: 62,5%;
+.tituloPrincipal h1{
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(233, 42, 17);
 }
 
+.tituloPrincipal i{
+    font-size: 3rem;
+    color: rgb(252, 252, 252);
+}
 
 body{
-    font-family: 'Raleway', sans-serif;
-    background-color: #161718 ;
-    color: #fafafa ;
+    background-color:#212529;
     overflow-x: hidden;
 }
 
-
-h1{
-    color: brown;
-    padding: 10px;
-    size: 3rem;
-    text-decoration: none;
-    display: inline-block
+.imagenGaleria { 
+    border-radius: 1rem;
+    padding: 0.4rem;
+    max-width: 150%;
+    height: auto;
+    filter: grayscale(50%);
+    transition: all 0.3s ease;
 }
 
-hi a:hover{
-    color:bisque
+.imagenGaleria:hover{
+    filter:grayscale(0%);
+    transform:scale(1.03);
 }
 
-i {
-    font-size: 4rem;
-    color: rgb(236, 230, 226);
+h1,h2{
+    color: aliceblue;
 }
 
-i a:hover{
-    color:brown;
+.galeria{
+   display: flex;
+   justify-content: center;
+   padding: 0.5rem;
 }
 
+.card{
+    width: 25rem;
+}
 
-
-header{
-    display: flex;
-    justify-content: space-between;
+#QUIENESSOMOS{
+    align-content: center;
     align-items: center;
-    padding: 1rem 0;
-    height: 10rem;
 }
 
-header ul li{
-    display: inline-block;
+.card-text{
     font-family: 'Raleway', sans-serif;
-    margin: 1rem;
-    font-size: 2rem;
 }
-
-header ul li a:hover{
-color: grey;
-}
-
-a {
-    color:rgb(247, 240, 202);
-    text-transform: inherit;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* titulos */
-
-.textos{
-    text-align: center;
-    font-size: 20px;
-    color: rgba(241, 204, 169, 0.377);
-}
-
-
-/* footer y Nav*/
-
-footer{
-    text-align: center;
-    border: 1px solid rgb(243, 215, 154);
-}
-
-footer ul li{
-    display: inline-block;
-}
-
-footer ul li a:hover{
-    color: grey;
-    }
-
-
-
-
-
-    .hero{
-        width: 100%;
-        height: calc(50vh - 5rem);
-        position: relative;
-    }
-
-     .hero h2 span{
-        font-weight: 600;
-    }
-
-    .hero h2 span::before{
-        content: "" ;
-        background-color:rgb(240, 182, 95);
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        border-radius: 1px;
-        height: 5%;
-        z-index: -1;
-    }
-
-    .imagenGaleria { 
-        border-radius: 1rem;
-        padding: 0.4rem;
-        max-width: 100%;
-        height: auto;
-        filter: grayscale(50%);
-        transition: all 0.3s ease;
-    }
-    
-    .imagenGaleria:hover{
-        filter:grayscale(0%);
-        transform:scale(1.03);
-    }
